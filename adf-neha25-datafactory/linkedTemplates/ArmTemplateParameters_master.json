@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-neha25-datafactory"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"BlobStorageOutput_connectionString": {
+			"value": ""
+		},
+		"OnPremServer_password": {
+			"value": ""
+		},
+		"SQLDB_connectionString": {
+			"value": ""
+		},
+		"adfdatalakegen25_linkedservice_accountKey": {
+			"value": ""
+		},
+		"adflabneha25storageacc_linkedservice_connectionString": {
+			"value": ""
+		},
+		"adflabstorageaccount_linkedservice_connectionString": {
+			"value": ""
+		},
+		"taxisql_linkedservice_connectionString": {
+			"value": ""
+		},
+		"unzip_AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"OnPremServer_properties_typeProperties_host": {
+			"value": "\\\\adflabvm\\sampledata"
+		},
+		"OnPremServer_properties_typeProperties_userId": {
+			"value": "developer"
+		},
+		"adfdatalakegen25_linkedservice_properties_typeProperties_url": {
+			"value": "https://adfdatalakegen25.dfs.core.windows.net/"
+		},
+		"unzip_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adfdatalakegen25.dfs.core.windows.net/"
+		},
+		"Trigger_8sj_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_8sj_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"Trigger_ci3_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_ci3_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
